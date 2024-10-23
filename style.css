@@ -193,3 +193,20 @@ section{
     width: 150px;
     padding-top: 10px;
 }
+.gridClass .outerBox{
+    height: 40px;
+    width: 100%;
+    padding: 15px;
+    background-color: #a1c349;
+    margin-bottom: 10px;
+}
+.gridClass .innerBox{
+    width: inherit;
+    height: inherit;
+    background-color: #a1c349;
+    text-align: center;
+    background-color: #d8e7b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
