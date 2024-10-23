@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'ClashGrotesk';
+    src: url('fonts/ClashGrotesk-Bold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: bold;
+}
+body{
+    font-family: montserrat;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    position: fixed;
+}
+section{
+    padding-top: 70px;
+}
+#header{
+    padding-top: 0;
+}
+.nav-bar{
+    height: 50px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    color: rgb(255, 255, 255);
+}
+.logo{
+    width: 40px;
+    margin-left: 40px;
+}
+.logo-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+.logo-container a{
+    text-transform: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    margin-right: 40px;
+    
+}
+.menu li{
+    margin: 0px 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+.menu a:hover{
+    font-weight: bold;
+    color: #a1c349;
+}
+.menu .active{
+    color: #a1c349;
+}
+
+.container{
+    padding: 0px 100px;
+    display: flex;
+}
+.left{
+    width: 50%;
+    padding-top: 200px;
+    
+}
+.left h4{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.left h1{
+    font-family: 'ClashGrotesk',sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+.left p{
+    width: 80%;
+}
+.right-image{
+    width: 100%;
+}
+.container .section-header{
+    width: 25vw;
+}
+.container .section-content{
+    width: 75vw;
+}
+
+.card-container{
+    background-color: rgb(92, 92, 92);
+    height: 120px;
+    display: flex;
+    align-items: end;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 140px;
+    margin-right: 20px;
+
+}
+
+.section-header h3, p{
+    padding: 0;
+    margin: 0;
+}
+.color-group{
+    display: flex;
+}
+
+.color-section h1{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.card-container p{
+    margin: 0;
+    padding: 0;
+    
+}
+.typeface h1{
+    font-family: 'ClashGrotesk',sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.typeface p{
+    width: 50vw;
+}
+.headingText{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: start;
+    width: 800px;
+    border-bottom: 1px solid rgb(142, 142, 142);
+}
+
+.headOne{
+    font-family: 'ClashGrotesk',sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    
+}
+.headTwo{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.headThree{
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.headFour{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.bodyText{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.endText{
+    width: 150px;
+    padding-top: 10px;
+}
