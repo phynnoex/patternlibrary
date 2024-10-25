@@ -199,6 +199,7 @@ section{
     padding: 15px;
     background-color: #a1c349;
     margin-bottom: 10px;
+    display: flex;
 }
 .gridClass .innerBox{
     width: inherit;
@@ -209,4 +210,5 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
