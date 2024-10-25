@@ -212,3 +212,34 @@ section{
     align-items: center;
     margin-right: 10px;
 }
+table{
+    table-layout: auto;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    border-collapse: collapse; /* Add this line */
+    background-color: rgb(252, 252, 252);
+    margin-bottom: 20px;
+}
+thead tr th{
+    text-align: left;
+    padding: 10px;
+}
+thead tr{
+    height: 50px;
+    background-color: #e4e4e4;
+    border-bottom: 1px solid #000;
+}
+
+thead{
+    background-color: #b9b9b9;
+}
+tbody tr td{
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #b7b7b7;
+}
+tbody tr {
+    text-align: left;
+    padding: 10px;
+}
