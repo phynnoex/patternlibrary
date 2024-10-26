@@ -312,6 +312,9 @@
             </div>
         </div>
     </section>
+
+    <!-- ------------------------- -->
+    <!-- dataviz -->
     <section id="dataViz">
         <div class="container">
             <div class="section-header">
@@ -369,7 +372,7 @@
 
     const options = {
         root: null, // Uses the viewport as the root
-        threshold: 0.5 // Trigger when 50% of the section is in view
+        threshold: 0.1 // Trigger when 50% of the section is in view
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
