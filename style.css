@@ -233,6 +233,13 @@ section{
     background-color: #a1c349;
     margin-bottom: 10px;
     display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #41501c;
+}
+.gridSystem{
+    box-shadow: 0px 0px 5px 0px #41501c;
+    border-radius: 27px;
+    margin-top: 20px;
 }
 .gridClass .innerBox{
     width: inherit;
@@ -244,6 +251,19 @@ section{
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    border-radius: 5px;
+}
+.mobileTablet{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.mobile{
+    width: 30%;
+}
+.tablet{
+    width: 60%;
 }
 table{
     table-layout: auto;
