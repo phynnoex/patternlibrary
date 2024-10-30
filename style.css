@@ -10,9 +10,7 @@ body{
     margin: 0;
     padding: 0;
 }
-#header{
-    position: fixed;
-}
+
 section{
     padding-top: 70px;
     min-height: 100vh;
@@ -20,8 +18,10 @@ section{
 
 #header{
     padding-top: 0;
+    height: fit-content;
 }
 .nav-bar{
+    position: fixed;
     height: 50px;
     background-color: #333333;
     display: flex;
@@ -355,8 +355,8 @@ tbody tr {
     color: #666666;
     cursor: not-allowed; 
 }
-.codeFormat pre{
-    margin: 0 !important;
+pre{
+    margin: 0px 20px !important;
     padding: 0 !important;
     overflow: hidden;
     font-size: 20px;
@@ -364,11 +364,16 @@ tbody tr {
     line-height: 25px;
 }
 .codeFormat{
-    background-color: #f4f4f4;
-    padding: 10px;
+    background-color: #f0f0f0;
     border-radius: 5px;
     margin-top: 20px;
     width: 100%;
+    border: 1px solid #c5c5c5;
+}
+.codeFormat p{
+    width: auto;
+    background: linear-gradient(to bottom, #dfdfdf, #c8c8c8);
+    margin: 0;
     padding: 20px;
 }
 .button-container {
