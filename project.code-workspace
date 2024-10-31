@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "project",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../../../../Downloads/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "project"
+	}
+}

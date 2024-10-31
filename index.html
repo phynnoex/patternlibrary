@@ -381,10 +381,12 @@
                     <p><b>Code Extract</b></p>
                     <pre>
                         <code>
-                            &lt;button class="primary"&gt;Primary&lt;/button&gt;
-                            &lt;button class="secondary"&gt;Secondary&lt;/button&gt;
-                            &lt;button class="tertiary"&gt;Tertiary&lt;/button&gt;
-                            &lt;button class="disabled"&gt;Disabled&lt;/button&gt;
+                            &lt;label for="selectOption"&gt;Select an option:&lt;/label&gt;
+                            &lt;select id="selectOption" name="selectOption"&gt;
+                                &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+                                &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+                                &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+                            &lt;/select&gt;
                         </code>
                     </pre>
                 </div>
@@ -433,26 +435,42 @@
         <div class="section-content">
             <form>
                 <!-- Select an option -->
-                 <h4>Option button</h4>
-                <label for="selectOption">Select an option:</label>
-                <select id="selectOption" name="selectOption">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select>
+                <h4>Option button</h4>
+                <label for="selectOption">Country:</label><br>
+                <div class="custom-dropdown">
+                    <div class="selected-option">
+                      <span>Select Country</span>
+                      <!-- SVG Icon for dropdown arrow -->
+                      <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10H7Z" fill="currentColor" />
+                      </svg>
+                    </div>
+                    <div class="options">
+                      <div class="option">
+                        <img src="./images/flags/canada.png" alt="">
+                        Canada
+                      </div>
+                      <div class="option">
+                        <img src="./images/flags/usa.png" alt="">
+                        America
+                      </div>
+                      <div class="option">
+                        <img src="./images/flags/nigeria.png" alt="">
+                        Nigeria
+                    </div> 
+                </div>
+                               
                 <br>
                 <div class="codeFormat">
                     <p><b>Code Extract</b></p>
                     <pre>
                         <code>
-                            <code>
-                                &lt;label for="selectOption"&gt;Select an option:&lt;/label&gt;
-                                &lt;select id="selectOption" name="selectOption"&gt;
-                                    &lt;option value="option1"&gt;Option 1&lt;/option&gt;
-                                    &lt;option value="option2"&gt;Option 2&lt;/option&gt;
-                                    &lt;option value="option3"&gt;Option 3&lt;/option&gt;
-                                &lt;/select&gt;
-                            </code>
+                            &lt;label for="selectOption"&gt;Select an option:&lt;/label&gt;
+                            &lt;select id="selectOption" name="selectOption"&gt;
+                                &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+                                &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+                                &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+                            &lt;/select&gt;
                         </code>
                     </pre>
                 </div>
@@ -604,6 +622,26 @@
     // Observe each section
     sections.forEach(section => observer.observe(section));
 });
+
+const selectedOption = document.querySelector('.selected-option');
+const optionsContainer = document.querySelector('.options');
+const dropdown = document.querySelector('.custom-dropdown');
+
+selectedOption.addEventListener('click', () => {
+  const isActive = optionsContainer.style.display === 'block';
+  optionsContainer.style.display = isActive ? 'none' : 'block';
+  dropdown.classList.toggle('active', !isActive);
+});
+
+document.querySelectorAll('.option').forEach(option => {
+  option.addEventListener('click', () => {
+    selectedOption.querySelector('span').textContent = option.textContent;
+    optionsContainer.style.display = 'none';
+    dropdown.classList.remove('active');
+  });
+});
+
+
 
 </script>
 <script src="https://kit.fontawesome.com/73f08afdf2.js" crossorigin="anonymous"></script>
