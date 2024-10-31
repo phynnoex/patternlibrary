@@ -625,6 +625,9 @@ pre{
         .endText{
             width: 60%;
         }
+        .endText{
+            font-size: 16px;
+        }
         
     }
 
