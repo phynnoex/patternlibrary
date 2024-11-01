@@ -54,7 +54,56 @@ section{
 .menu li{
     margin: 0px 20px;
 }
+.mobileMenu{
+    height: 100vh;
+    background-color: #a1c349;
+    width: 50%;
+    padding: 0px;
+    padding-top: 50px;
+    display: none;
+}
+.menuButtonClass{
+    margin: 12px 20px;
+}
+.menuButtonClass button{
+    background-color: #424b2a;
+    border: none;
+    padding: 5px 10px ;
+    color: white;
+}
 
+ul{
+    padding: 0;
+    margin: 0;
+}
+.mobileMenu li{
+    height: 40px;
+    border-bottom: 2px solid #a1c349;
+    list-style-type: none;
+    padding: 10px 20px;
+}
+.cancelClass{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    
+}
+.cancelClass button{
+    margin: 0px 30px;
+    background-color: #a1c349;
+    border: none;
+}
+.cancelClass i{
+    color: white;
+    font-size: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 12px;
+}
 .menu a{
     text-decoration: none;
     text-transform: uppercase;

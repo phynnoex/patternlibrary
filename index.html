@@ -13,6 +13,9 @@
             <a href="#banner"><img class="logo" src="./images/starwing.png" alt=""></a>
             <h4>SKYLINE AIRLINES</h4>
         </div>
+        <div class="menuButtonClass">
+            <button class="menu-button" onclick="menuEnter()"><i class="fa-solid fa-bars"></i></button>
+        </div>
         <ul class="menu">
                 <li><a href="#colors">colors</a></li>
                 <li><a href="#typography">typography</a></li>
@@ -24,6 +27,21 @@
                 <li><a href="">Tables</a></li>
                 
         </ul>
+        <div class="mobileMenu">
+            <div class="cancelClass">
+                <button onclick=""><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul>
+                <li><a href="#colors">colors</a></li>
+                <li><a href="#typography">typography</a></li>
+                <li><a href="#gridLayout">Grid Layout</a></li>
+                <li><a href="#dataViz">data viz</a></li>
+                <li><a href="#buttonSection">Buttons</a></li>
+                <li><a href="#formSection">Forms</a></li>
+                <li><a href="">Notifications</a></li>
+                <li><a href="">Tables</a></li>
+            </ul>
+        </div>
     </div>
     <section id="banner">
         <div class="container">
@@ -533,7 +551,7 @@
                 <!-- Filtered search -->
                 <label for="filteredSearch">Filtered search:</label>
                 <input type="search" id="filteredSearch" name="filteredSearch">
-                <br>
+                
                 <div class="codeFormat">
                     <p><b>Code Extract</b></p>
                     <pre>
@@ -640,6 +658,22 @@ document.querySelectorAll('.option').forEach(option => {
     dropdown.classList.remove('active');
   });
 });
+
+//close button
+document.querySelector('.cancelClass button').addEventListener('click', () => {
+    document.querySelector('.mobileMenu').style.display = 'none';
+    document.querySelector('.menuButtonClass').style.display = 'block';
+});
+function menuEnter() {
+    console.log('menuEnter');
+    document.querySelector('.mobileMenu').style.display = 'block';
+    document.querySelector('.menuButtonClass').style.display = 'none';
+}
+    
+
+
+
+
 
 
 
