@@ -23,8 +23,8 @@
                 <li><a href="#dataViz">data viz</a></li>
                 <li><a href="#buttonSection">Buttons</a></li>
                 <li><a href="#formSection">Forms</a></li>
-                <li><a href="">Notifications</a></li>
-                <li><a href="">Tables</a></li>
+                <li><a href="#feedbackSection">Feedbacks</a></li>
+                <li><a href="#tableSection">Tables</a></li>
         </ul>
         <div class="mobileMenu">
             <div class="cancelClass">
@@ -37,7 +37,7 @@
                 <li><a href="#dataViz">data viz</a></li>
                 <li><a href="#buttonSection">Buttons</a></li>
                 <li><a href="#formSection">Forms</a></li>
-                <li><a href="">Notifications</a></li>
+                <li><a href="#feedbackSection">Feedbacks</a></li>
                 <li><a href="">Tables</a></li>
             </ul>
         </div>
@@ -602,6 +602,147 @@
                 <label for="switchChecked">Switch (checked):</label>
                 <input type="checkbox" id="switchChecked" name="switchChecked" checked>
         
+    </div>
+</section>
+<section id="feedbackSection">
+    <div class="container">
+        <div class="section-header">
+            <h3>Feedbacks</h3>   
+        </div>
+        <div class="section-content">
+            <h4>Feedback notifications</h4>
+            <div class="feedbackCard" style="background-color: #d4eb9a;">
+                <div class="feedbackIcon"><i class="fa-solid fa-square-check"></i></div>
+                <div class="feebackText">
+                    <div class="head">Flight book succesful</div>
+                    <div class="body">flight has been succesfully booked</div>
+                </div>
+            </div><div class="feedbackCard" style="background-color: #e99c9c;">
+                <div class="feedbackIcon"><i class="fa-solid fa-square-xmark"></i></div>
+                <div class="feebackText">
+                    <div class="head">Flight book error</div>
+                    <div class="body">unable to book flight <span><a href="#"> try again </a></span></div>
+                </div>
+            </div>
+            <div class="feedbackCard" style="background-color: #ebd99a">
+                <div class="feedbackIcon"><i class="fa-solid fa-bell"></i></div>
+                <div class="feebackText">
+                    <div class="head">Flight status</div>
+                    <div class="body">your flight takes off in exactly 2 hours</div>
+                </div>
+            </div>
+            <div class="feedbackCard" style="background-color: #accce8;">
+                <div class="feedbackIcon"><i class="fa-solid fa-circle-info"></i></div>
+                <div class="feebackText">
+                    <div class="head">Flight status</div>
+                    <div class="body">congratulations you have arrived at your destination safely</div>
+                </div>
+            </div>
+            <div class="codeFormat">
+                <p><b>Code Extract</b></p>
+                <pre>
+                    <code>
+                    &lt;div class="feedbackCard" style="background-color: #accce8;"&gt;
+                        &lt;div class="feedbackIcon"&gt;&lt;i class="fa-solid fa-circle-info"&gt;&lt;/i&gt;&lt;/div&gt;
+                        &lt;div class="feebackText"&gt;
+                            &lt;div class="head"&gt;Flight status&lt;/div&gt;
+                            &lt;div class="body"&gt;congratulations you have arrived at your destination safely&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="tableSection">
+    <div class="container">
+        <div class="section-header">
+            <h3>Tables</h3>   
+        </div>
+        <div class="section-content">
+            <h4>Flight Schedule Table</h4>
+            <div class="tableContainer">
+            <table style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Flight Number</th>
+                        <th>Dparture Airport</th>
+                        <th>Arrival Airport</th>
+                        <th>Departure Time</th>
+                        <th>Arrival Time</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AA123</td>
+                        <td>JFK</td>
+                        <td>LAX</td>
+                        <td>08:00</td>
+                        <td>11:00</td>
+                        <td>6h</td>
+                        <td>On Time</td>
+                    </tr>
+                    <tr>
+                        <td>BF124</td>
+                        <td>LAX</td>
+                        <td>LAX</td>
+                        <td>10:00</td>
+                        <td>13:00</td>
+                        <td>6h</td>
+                        <td>Delayed</td>
+                    </tr>
+                    <tr>
+                        <td>DL789</td>
+                        <td>JFK</td>
+                        <td>PERASON</td>
+                        <td>12:00</td>
+                        <td>15:00</td>
+                        <td>6h</td>
+                        <td>On Time</td>
+                    </tr>
+                    <tr>
+                        <td>UA234</td>
+                        <td>JFK</td>
+                        <td>LAX</td>
+                        <td>14:00</td>
+                        <td>17:00</td>
+                        <td>6h</td>
+                        <td>cancelled</td>
+                </tbody>
+            </table>
+            </div>
+            <div class="codeFormat">
+                <p><b>Code Extract</b></p>
+                <pre>
+                    <code>
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;AA123&lt;/td&gt;
+                                &lt;td&gt;JFK&lt;/td&gt;
+                                &lt;td&gt;LAX&lt;/td&gt;
+                                &lt;td&gt;08:00&lt;/td&gt;
+                                &lt;td&gt;11:00&lt;/td&gt;
+                                &lt;td&gt;6h&lt;/td&gt;
+                                &lt;td&gt;On Time&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;BF124&lt;/td&gt;
+                                &lt;td&gt;LAX&lt;/td&gt;
+                                &lt;td&gt;LAX&lt;/td&gt;
+                                &lt;td&gt;10:00&lt;/td&gt;
+                                &lt;td&gt;13:00&lt;/td&gt;
+                                &lt;td&gt;6h&lt;/td&gt;
+                                &lt;td&gt;Delayed&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    </code>
+                </pre>
+            </div>
+        </div>
     </div>
 </section>
 
