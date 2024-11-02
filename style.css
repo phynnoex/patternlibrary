@@ -209,6 +209,7 @@ li a{
 }
 .color-group{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .color-section h1{
@@ -748,12 +749,10 @@ pre{
             width: 100%;
         }
         .card-container{
-            width: 100%;
+            width: 40%;
         }
-        .color-group{
-            display: flex;
-            flex-direction: column;
-        }
+
+
         .color-section h1{
             margin-bottom: 0;
         }
