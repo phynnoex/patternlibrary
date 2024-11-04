@@ -47,6 +47,7 @@ section{
 }
 .menu{
     display: flex;
+    align-items: center;
     list-style-type: none;
     margin-right: 40px;
     
@@ -282,44 +283,36 @@ li a{
     width: 150px;
     padding-top: 10px;
 }
-.gridClass .outerBox{
-    height: 40px;
-    width: 100%;
-    padding: 15px;
-    background-color: #a1c349;
-    margin-bottom: 10px;
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px #41501c;
-}
-.gridSystem{
-    box-shadow: 0px 0px 5px 0px #41501c;
-    border-radius: 27px;
-    margin-top: 20px;
-}
-.gridClass .innerBox{
-    width: inherit;
-    height: inherit;
-    background-color: #a1c349;
-    text-align: center;
-    background-color: #d8e7b3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    border-radius: 5px;
-}
+
 .mobileTablet{
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+}
+.gridClass{
+    width: 100%;
     
 }
-.mobile{
-    width: 30%;
+.outerBox{
+    align-items: center ;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: #cedfa4;
 }
-.tablet{
-    width: 60%;
+.innerBox{
+background-color: #a1c349;
+height: inherit;
+width: inherit;
+margin: 0px 10px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .tableContainer{
     overflow-x: auto;
@@ -606,13 +599,83 @@ pre{
   #tableSection .tableContainer tbody tr{
     background-color: #dde4ce;
   }
+#footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    min-height: 50px;
+    display: flex; /* Display items in a row */
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space out the content evenly */
+    align-items: center; /* Center align items vertically */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+    max-width: 1200px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Padding for left and right */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 50px; /* Center align logo and text vertically */
+}
+
+.footer-logo img {
+    height: 50px; /* Set a fixed height for the logo */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.footer-links ul,
+.footer-socials ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display items in a row */
+}
+
+.footer-links li,
+.footer-socials li {
+    margin-right: 20px; /* Space between list items */
+}
+
+.footer-links a,
+.footer-socials a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+    color: #ccc; /* Light gray color on hover */
+}
+
+.footer-socials i {
+    font-size: 20px; /* Set a fixed size for social icons */
+}
  /* breakpoint mobile */
     @media only screen and (max-width: 600px) {
+        body,html{
+            margin: 0;
+            padding: 0 !important;
+            box-sizing: border-box;
+        }
         section{
-            width: 100vw
+            width: 100%;
+            max-width: 100vw;
+            padding: 0;
+            padding: 20px;
         }
         .container {
-            padding: 0px 20px;
+            width: 100%;
+            max-width: 100vw;
+            padding: 0;
         }
         .left{
             width: 100%;
@@ -628,13 +691,8 @@ pre{
         #colors h1{
             font-size: 20px;
         }
-        input{
+        form{
             width: 100vw;
-            border: none;
-            background-color: #dfdfdf;
-            height: 50px;
-            padding: 5px 10px;
-            font-size: 20px;
         }
         label{
             font-size: 20px;
@@ -642,9 +700,15 @@ pre{
         .InputWithBtn{
             width: 100vw;
         }
+        input{
+            box-sizing: border-box;
+            width: 100vw;
+            height: 50px;
+        }
         .InputWithBtn button{
-            height: 60px;
+            height: 50px;
             width: 25%;
+            background-color: #9c9c9c;
         }
         .mobileMenu{
             display: none;
@@ -692,8 +756,12 @@ pre{
         .section-header{
             width: 100%;
         }
+        .container .section-content{
+            width: 100vw;
+
+        }
         .section-content{
-            width: 100vw !important;
+            max-width: 100vw !important;
         }
         .gridClass .outerBox{
             width: 100%;
@@ -740,7 +808,7 @@ pre{
             width: 20%;
         }
         hr{
-            margin: 10px 20px;
+            margin: 10px 0px;
         }
         .option{
             padding: 8px 12px;
@@ -749,7 +817,7 @@ pre{
             width: 100%;
         }
         .card-container{
-            width: 40%;
+            width: 35vw;
         }
 
 
@@ -797,6 +865,38 @@ pre{
         }
         .mobileMenu{
             display: none;
+        }
+        #footer{
+            
+        }
+        .footer-content {
+            flex-direction: column; /* Stack items vertically */
+            align-items: flex-start; /* Align items to the start */
+            margin: 0;
+        }
+    
+        .footer-logo {
+            margin-bottom: 20px; /* Add space below the logo */
+        }
+    
+        .footer-links ul {
+            flex-direction: column; /* Stack list items vertically */
+        }
+        .footer-socials ul {
+            margin-top: 20px;
+            flex-direction: row;
+            width: 50%; /* Display social icons in a row */
+        }
+    
+        .footer-links li,
+        .footer-socials li {
+            margin-right: 10px; /* Remove right margin */
+            margin-bottom: 10px; /* Add bottom margin */
+        }
+    
+        .footer-links li:last-child,
+        .footer-socials li:last-child {
+            margin-bottom: 0; /* Remove bottom margin for the last item */
         }
             
     }
