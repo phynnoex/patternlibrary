@@ -28,6 +28,9 @@
                 <li><a href="#feedbackSection">Feedbacks</a></li>
                 <li><a href="#tableSection">Tables</a></li>
                 <li><a href="#cardSection">Cards</a></li>
+                <li><a href="#navSection">Navigation</a></li>
+
+                
 
         </ul>
         <div class="mobileMenu">
@@ -758,7 +761,7 @@
         </div>
         <div class="section-content">
              <h4>Large Cards</h4>
-            <p>Large cards are used to display flight information</p>
+            <p>Large cards are used to display for important advertisements and Call-To-Action on the webpage</p>
             <div class="cardContainer" style="margin-top: 20px;">
                 <div class="card">
                     <div class="imageContainer">
@@ -839,6 +842,42 @@
             </div>
 
 </section>
+<section id="navSection">
+    <hr>
+    <div class="container">
+        <div class="section-header">
+            <h3>Navigation</h3>   
+        </div>
+        <div class="section-content">
+            <h4>Navigation bar</h4>
+            <p>Our navigation bar is used to navigate through the website. We employ the use of sticker navbar so as to make it accessible for the user to get back to the navbar at any point of scroll</p>
+            <br>
+            <div class="navBar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="codeFormat">
+                <p><b>Code Extract</b></p>
+                <pre>
+                    <code>
+                    &lt;div class="navBar"&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="footer">
     <div class="container">
         <div class="footer-content">
@@ -900,6 +939,10 @@
     // Observe each section
     sections.forEach(section => observer.observe(section));
 });
+
+
+
+//dropdown
 
 const selectedOption = document.querySelector('.selected-option');
 const optionsContainer = document.querySelector('.options');
